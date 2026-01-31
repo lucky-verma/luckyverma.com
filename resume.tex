@@ -1,0 +1,244 @@
+%%%%
+% Lucky Verma - AI/ML Engineer Resume
+% Optimized for 2026 Job Market
+%%%%
+
+\documentclass[letterpaper,10pt]{article}
+
+% Dependencies
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{bookmark}
+\usepackage{lastpage}
+
+% Fonts
+\usepackage{CormorantGaramond}
+\usepackage{charter}
+
+% Colors
+\usepackage{xcolor}
+\definecolor{accentTitle}{HTML}{0e6e55}
+\definecolor{accentText}{HTML}{0e6e55}
+\definecolor{accentLine}{HTML}{a16f0b}
+
+% Page Setup
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.4in}
+
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\setlength{\tabcolsep}{0pt}
+\setlength{\footskip}{3.7pt}
+\raggedbottom
+\raggedright
+
+% ATS Readability
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% Custom Commands
+\newcommand{\documentTitle}[2]{
+  \begin{center}
+    {\Huge\color{accentTitle} #1}
+    \vspace{10pt}
+    {\color{accentLine} \hrule}
+    \vspace{2pt}
+    \footnotesize{#2}
+    \vspace{2pt}
+    {\color{accentLine} \hrule}
+  \end{center}
+}
+
+\newcommand{\documentFooter}[1]{
+  \setlength{\footskip}{10.25pt}
+  \fancyfoot[C]{\footnotesize #1}
+}
+
+\titleformat{\section}{
+  \vspace{-5pt}
+  \color{accentText}
+  \raggedright\large\bfseries
+}{}{0em}{}[\color{accentLine}\titlerule]
+
+\newcommand{\tinysection}[1]{
+  \phantomsection
+  \addcontentsline{toc}{section}{#1}
+  {\large{\bfseries\color{accentText}#1} {\color{accentLine} |}}
+}
+
+\newcommand{\heading}[2]{
+  \hspace{10pt}#1\hfill#2\\
+}
+
+\newcommand{\headingBf}[2]{
+  \heading{\textbf{#1}}{\textbf{#2}}
+}
+
+\newcommand{\headingIt}[2]{
+  \heading{\textit{#1}}{\textit{#2}}
+}
+
+\newenvironment{resume_list}{
+  \vspace{-7pt}
+  \begin{itemize}[itemsep=-2px, parsep=1pt, leftmargin=30pt]
+}{
+  \end{itemize}
+}
+
+\newcommand{\itemTitle}[1]{
+  \item[] \underline{#1}\vspace{4pt}
+}
+
+\renewcommand\labelitemi{--}
+
+\begin{document}
+
+  %---------%
+  % Heading %
+  %---------%
+
+  \documentTitle{Lucky Verma}{
+    \href{tel:6679104149}{
+      \raisebox{-0.05\height} \faPhone\ 667-910-4149} ~ | ~
+    \href{mailto:luckie.verma30@gmail.com}{
+      \raisebox{-0.15\height} \faEnvelope\ luckie.verma30@gmail.com} ~ | ~
+    \href{https://linkedin.com/in/lucky-verma}{
+      \raisebox{-0.15\height} \faLinkedin\ linkedin.com/in/lucky-verma} ~ | ~
+    \href{https://github.com/lucky-verma}{
+      \raisebox{-0.15\height} \faGithub\ github.com/lucky-verma} ~ | ~
+    Nashville, TN
+  }
+
+  %---------%
+  % Summary %
+  %---------%
+
+  \tinysection{Professional Summary}
+  Senior AI/ML Engineer with 3+ years specializing in production-scale agentic AI systems, multi-hop reasoning, and automated security analysis. Expert in end-to-end ML system design from research to deployment, with proven track record building enterprise solutions using LLMs, RAG architectures, and knowledge graphs. Passionate about solving complex problems through innovative AI applications.
+
+  %--------%
+  % Skills %
+  %--------%
+
+  \section{Technical Skills}
+
+  \begin{multicols}{2}
+    \begin{itemize}[itemsep=-2px, parsep=1pt, leftmargin=85pt]
+      \item[\textbf{AI/ML Core}] Agentic AI, Multi-hop Reasoning, NLP, Computer Vision
+      \item[\textbf{Languages}] Python, SQL, JavaScript, CUDA, Bash
+      \item[\textbf{ML Frameworks}] PyTorch, TensorFlow, LangChain, DSPy, scikit-learn
+      \item[\textbf{LLM/RAG}] Fine-tuning, RAG, Prompt Engineering, Vector DBs
+      \item[\textbf{Cloud/DevOps}] AWS Bedrock, Docker, PostgreSQL, FastAPI, Redis
+      \item[\textbf{Specialized}] Knowledge Graphs, CodeQL, Multi-modal AI, MLOps
+    \end{itemize}
+  \end{multicols}
+
+  %------------%
+  % Experience %
+  %------------%
+
+  \section{Professional Experience}
+
+  \headingBf{Eccalon LLC}{June 2022 -- Present}
+  \headingIt{Senior Machine Learning Engineer}{Nashville, TN}
+  \begin{resume_list}
+    \itemTitle{Advanced AI Systems \& Intelligence Platforms}
+    \item Built AEGIS, a production-scale agentic AI platform combining LangGraph orchestration with DSPy optimization for complex multi-hop reasoning and foreign entity analysis
+    \item Implemented sophisticated knowledge graph system using PostgreSQL + Apache AGE, enabling dynamic relationship discovery across 10M+ entities with 95\% accuracy
+    \item Developed professional Streamlit UI with FastAPI backend, serving 1000+ concurrent users with sub-10-second response times for complex analytical queries
+    \item Architected enterprise-grade security including API authentication, rate limiting, and circuit breaker patterns for high-availability production deployment
+    \vspace{3pt}
+    \itemTitle{Automated Security Analysis \& Code Intelligence}
+    \item Designed CodeCompliant, an end-to-end automated security analysis platform integrating CodeQL static analysis with LLM-powered vulnerability assessment
+    \item Built two-phase architecture supporting 8+ programming languages with automated remediation generation, reducing security review time by 85\%
+    \item Implemented Solr-based indexing system for efficient security finding search and retrieval across enterprise codebases
+    \item Created autonomous code correction pipeline with automated PR generation using Git integration and LLM-powered fix suggestions
+    \vspace{3pt}
+    \itemTitle{Computer Vision \& Production ML Systems}
+    \item Developed Lirisyst, a production scene-text detection system using PyTorch with 95\%+ accuracy for foreign language text processing and OCR integration
+    \item Built GPU-accelerated 3D model optimization pipeline using CUDA and custom neural architectures, reducing processing time by 60\%
+    \item Implemented real-time sports analytics system with computer vision and deep learning for live game analysis, processing 30+ FPS video streams
+    \item Deployed production RAG systems on AWS infrastructure serving enterprise data contextualization with 75\% improved retrieval efficiency
+  \end{resume_list}
+
+  \headingBf{University of Maryland, Baltimore County}{January 2022 -- May 2023}
+  \headingIt{Graduate Research Assistant}{Baltimore, MD}
+  \begin{resume_list}
+    \item Developed ensemble 1D U-Net architecture for biomedical signal classification using PPG data, achieving 92\% accuracy on sleep-stage detection
+    \item Researched real-time time-series processing for continuous health monitoring applications using signal processing and deep learning
+  \end{resume_list}
+
+  \headingBf{Vast Dream Group}{January 2021 -- August 2021}
+  \headingIt{AI Specialist}{Sydney, Australia (Remote)}
+  \begin{resume_list}
+    \item Built production recommendation engine using BART for zero-shot classification, fine-tuned on MNLI dataset with 96\% accuracy
+    \item Architected AI measurement systems for optics industry, contributing to \$1M+ revenue pipeline through automated quality analysis
+    \item Designed and implemented end-to-end ML pipelines from data ingestion to model deployment using modern MLOps practices
+  \end{resume_list}
+
+  %-----------%
+  % Education %
+  %-----------%
+
+  \section{Education}
+
+  \headingBf{University of Maryland, Baltimore County}{2023}
+  \headingIt{Master of Science in Computer Science -- GPA: 3.97}{}
+  \headingIt{Specialization: Machine Learning, Deep Learning, Advanced Algorithms}{}
+  
+  \vspace{3pt}
+  \headingBf{SRM University, Chennai, India}{2019}
+  \headingIt{Bachelor of Technology in Electrical \& Electronics Engineering -- GPA: 3.9}{}
+
+  %-----------%
+  % Projects  %
+  %-----------%
+
+  \section{Key Technical Projects}
+
+  \headingBf{Multi-Modal RAG System with Real-time Web Integration}{}
+  \begin{resume_list}
+    \item Developed advanced RAG architecture combining document processing, web crawling, and vector search using ChromaDB and embedding models
+    \item Implemented real-time content ingestion with SearXNG integration and automated fact-checking pipeline
+    \item Built interactive knowledge graph visualization using PyVis with confidence scoring and source attribution
+    \item Achieved 40\% improvement in answer relevance over traditional RAG approaches through multi-path reasoning
+  \end{resume_list}
+
+  \headingBf{Production MLOps Pipeline with Model Monitoring}{}
+  \begin{resume_list}
+    \item Designed end-to-end MLOps infrastructure using Docker, CI/CD, and automated model versioning
+    \item Implemented comprehensive model monitoring with drift detection and automated retraining triggers
+    \item Built centralized experiment tracking and hyperparameter optimization using modern ML tools
+    \item Reduced model deployment time from days to hours through automated testing and validation pipelines
+  \end{resume_list}
+
+  %--------------%
+  % Achievements %
+  %--------------%
+
+  \section{Recognition \& Achievements}
+
+  \begin{resume_list}
+    \item Winner, HackUMBC 2021 -- Best Docker Application, University of Maryland Baltimore County
+    \item Led 100+ student technology organization as Vice Chairperson, managing 15+ technical projects and inter-college collaborations
+    \item Published technical documentation and system architectures for enterprise-scale AI platforms
+    \item Consistently exceeded performance targets, receiving top ratings across all technical competency areas
+  \end{resume_list}
+
+\end{document}
