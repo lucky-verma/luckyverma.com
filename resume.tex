@@ -212,6 +212,14 @@
 
   \section{Key Technical Projects}
 
+  \headingBf{InfiniteContext-1B: Million-Token LLM System}{}
+  \begin{resume_list}
+    \item Built production-grade LLM system implementing DeepSeek-V3 Multi-Head Latent Attention (MLA) architecture with 1M token context window
+    \item Achieved 93.7\% KV cache memory reduction (8MB vs 128MB per 1k tokens) enabling inference on consumer GPUs (RTX 2070 Super for 128k context)
+    \item Implemented distributed FSDP training on SLURM clusters with 92\% GPU utilization on 4x A100s, custom Triton kernels for accelerated decoding
+    \item Designed end-to-end MLOps pipeline with W\&B experiment tracking, Kubernetes deployment via vLLM, and Ansible infrastructure automation
+  \end{resume_list}
+
   \headingBf{Multi-Modal RAG System with Real-time Web Integration}{}
   \begin{resume_list}
     \item Developed advanced RAG architecture combining document processing, web crawling, and vector search using ChromaDB and embedding models

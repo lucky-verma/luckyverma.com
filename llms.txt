@@ -12,19 +12,21 @@ Lucky Verma is a Senior ML Engineer with 5+ years of experience building product
 - LinkedIn: https://linkedin.com/in/lucky-verma
 
 ## Expertise
+- LLM Development (distributed training, custom architectures, long-context models)
 - Agentic AI Systems (LangChain, tool use, multi-step reasoning)
 - Document Intelligence (LayoutLM, OCR, information extraction)
 - RAG Systems (retrieval-augmented generation, vector databases)
 - Production ML (PyTorch, FastAPI, MLOps, AWS)
 
 ## Notable Projects
+- InfiniteContext-1B: Production LLM with 1M token context using DeepSeek MLA, 93.7% KV cache reduction
 - Document Classification using LayoutLM (35 GitHub stars)
 - US Driver License Data Extraction (24 GitHub stars)
 - Sleep-Awake Classification using PPG (17 GitHub stars)
 - ABP Estimation using PPG (10 GitHub stars)
 
 ## Tech Stack
-Python, PyTorch, LangChain, FastAPI, RAG, Transformers, OpenAI, AWS, Docker, MLOps, PostgreSQL, Redis
+Python, PyTorch, PyTorch FSDP, Triton, LangChain, FastAPI, RAG, Transformers, vLLM, Kubernetes, AWS, Docker, MLOps
 
 ## Current Role
 Senior ML Engineer at Eccalon LLC
