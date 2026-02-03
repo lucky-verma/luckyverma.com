@@ -37,8 +37,14 @@
     </script>
 
     <link rel="llms" href="/llms.txt" type="text/plain">
+    <!-- Preconnect to external resources for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Preload fonts to eliminate render-blocking -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+    <!-- Preload hero image for faster LCP -->
+    <link rel="preload" as="image" href="Lucky_photo_no-bg.webp" type="image/webp" fetchpriority="high">
 
     <style>
         /* Dark Theme (Default) */
@@ -93,7 +99,6 @@
             line-height: 1.6;
             overflow-x: hidden;
             cursor: none;
-            transition: background 0.4s ease, color 0.4s ease;
         }
 
         /* Custom Cursor */
@@ -105,7 +110,7 @@
             position: fixed;
             pointer-events: none;
             z-index: 9999;
-            transition: transform 0.1s ease, opacity 0.3s ease, border-color 0.4s ease;
+            transition: transform 0.1s ease, opacity 0.3s ease;
             mix-blend-mode: difference;
         }
 
@@ -117,8 +122,7 @@
             position: fixed;
             pointer-events: none;
             z-index: 9999;
-            transition: background 0.4s ease;
-        }
+                    }
 
         .cursor.hover {
             transform: scale(2);
@@ -139,11 +143,6 @@
             align-items: center;
             gap: 2px;
             backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
-        }
-
-        .theme-toggle:hover {
-            border-color: var(--accent);
         }
 
         .theme-btn {
@@ -157,7 +156,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: all 0.3s ease;
         }
 
         .theme-btn.active {
@@ -251,7 +249,6 @@
             background-size: 60px 60px;
             z-index: 1;
             pointer-events: none;
-            transition: background-image 0.4s ease;
         }
 
         /* Mouse Glow */
@@ -264,7 +261,7 @@
             pointer-events: none;
             z-index: 2;
             transform: translate(-50%, -50%);
-            transition: opacity 0.3s ease, background 0.4s ease;
+            transition: opacity 0.3s ease;
         }
 
         /* Main Content */
@@ -290,8 +287,7 @@
             background: rgba(10, 10, 15, 0.8);
             backdrop-filter: blur(20px);
             border-bottom: 1px solid var(--border);
-            transition: background 0.4s ease, border-color 0.4s ease;
-        }
+                    }
 
         [data-theme="light"] nav {
             background: rgba(248, 250, 249, 0.85);
@@ -312,8 +308,7 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            transition: color 0.4s ease;
-        }
+                    }
 
         .logo-bracket {
             opacity: 0.5;
@@ -330,7 +325,6 @@
             color: var(--text-secondary);
             text-decoration: none;
             font-size: 0.9rem;
-            transition: color 0.3s ease;
             position: relative;
         }
 
@@ -342,7 +336,7 @@
             width: 0;
             height: 2px;
             background: var(--accent);
-            transition: width 0.3s ease, background 0.4s ease;
+            transition: width 0.3s ease;
         }
 
         .nav-links a:hover {
@@ -391,8 +385,7 @@
             margin-bottom: 16px;
             font-weight: 500;
             letter-spacing: 0.5px;
-            transition: color 0.4s ease;
-        }
+                    }
 
         .hero h1 {
             font-size: 4rem;
@@ -416,8 +409,7 @@
             color: var(--text-secondary);
             margin-bottom: 32px;
             max-width: 500px;
-            transition: color 0.4s ease;
-        }
+                    }
 
         .hero-stats {
             display: flex;
@@ -434,16 +426,14 @@
             font-weight: 700;
             color: var(--accent);
             font-family: 'JetBrains Mono', monospace;
-            transition: color 0.4s ease;
-        }
+                    }
 
         .stat-label {
             font-size: 0.85rem;
             color: var(--text-muted);
             text-transform: uppercase;
             letter-spacing: 1px;
-            transition: color 0.4s ease;
-        }
+                    }
 
         .hero-buttons {
             display: flex;
@@ -456,7 +446,7 @@
             font-size: 0.95rem;
             font-weight: 500;
             text-decoration: none;
-            transition: all 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             display: inline-flex;
             align-items: center;
             gap: 8px;
@@ -468,7 +458,6 @@
         }
 
         .btn-primary:hover {
-            background: var(--accent-dim);
             transform: translateY(-2px);
             box-shadow: 0 10px 40px var(--accent-glow);
         }
@@ -477,12 +466,9 @@
             background: transparent;
             color: var(--text-primary);
             border: 1px solid var(--border-hover);
-            transition: all 0.3s ease, border-color 0.4s ease;
         }
 
         .btn-secondary:hover {
-            border-color: var(--accent);
-            color: var(--accent);
             transform: translateY(-2px);
         }
 
@@ -528,8 +514,7 @@
             background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
             filter: blur(40px);
             animation: pulseGlow 4s infinite ease-in-out;
-            transition: background 0.4s ease;
-        }
+                    }
 
         @keyframes pulseGlow {
             0%, 100% { opacity: 0.6; transform: translate(-50%, -50%) scale(1); }
@@ -565,8 +550,7 @@
             border: 2px solid var(--accent);
             border-radius: 20px;
             pointer-events: none;
-            transition: border-color 0.4s ease;
-        }
+                    }
 
         .photo-decoration-1 {
             top: -15px;
@@ -619,7 +603,7 @@
             backdrop-filter: blur(10px);
             animation: floatTag 5s infinite ease-in-out;
             box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-            transition: background 0.4s ease, border-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
+            transition: box-shadow 0.3s ease;
         }
 
         [data-theme="light"] .tech-tag {
@@ -655,8 +639,7 @@
             text-transform: uppercase;
             letter-spacing: 2px;
             margin-bottom: 12px;
-            transition: color 0.4s ease;
-        }
+                    }
 
         .section-title {
             font-size: 2.5rem;
@@ -675,11 +658,12 @@
             border: 1px solid var(--border);
             border-radius: 16px;
             padding: 32px;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
             overflow: hidden;
             transform-style: preserve-3d;
             cursor: pointer;
+            will-change: transform;
         }
 
         .project-card::before {
@@ -726,8 +710,7 @@
             justify-content: center;
             color: var(--accent);
             font-size: 1.4rem;
-            transition: background 0.4s ease, color 0.4s ease;
-        }
+                    }
 
         .project-stars {
             display: flex;
@@ -736,8 +719,7 @@
             color: var(--text-muted);
             font-family: 'JetBrains Mono', monospace;
             font-size: 0.9rem;
-            transition: color 0.4s ease;
-        }
+                    }
 
         .project-stars svg {
             color: #fbbf24;
@@ -748,16 +730,14 @@
             font-weight: 600;
             margin-bottom: 12px;
             color: var(--text-primary);
-            transition: color 0.4s ease;
-        }
+                    }
 
         .project-description {
             color: var(--text-secondary);
             font-size: 0.95rem;
             margin-bottom: 20px;
             line-height: 1.6;
-            transition: color 0.4s ease;
-        }
+                    }
 
         .project-tags {
             display: flex;
@@ -772,8 +752,7 @@
             font-size: 0.8rem;
             color: var(--text-muted);
             font-family: 'JetBrains Mono', monospace;
-            transition: background 0.4s ease, color 0.4s ease;
-        }
+                    }
 
         /* Skills Section */
         .skills-container {
@@ -788,14 +767,14 @@
             border-radius: 12px;
             padding: 20px 24px;
             text-align: center;
-            transition: all 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            will-change: transform;
         }
 
         .skill-card:hover {
-            border-color: var(--accent);
             transform: translateY(-4px);
             box-shadow: 0 10px 30px var(--accent-glow);
         }
@@ -809,8 +788,7 @@
         .skill-level {
             font-size: 0.8rem;
             color: var(--text-muted);
-            transition: color 0.4s ease;
-        }
+                    }
 
         /* Contact Section */
         .contact-grid {
@@ -825,13 +803,13 @@
             border-radius: 16px;
             padding: 32px;
             text-align: center;
-            transition: all 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             text-decoration: none;
             color: inherit;
+            will-change: transform;
         }
 
         .contact-card:hover {
-            border-color: var(--accent);
             transform: translateY(-4px);
             box-shadow: 0 15px 30px var(--accent-glow);
         }
@@ -847,8 +825,7 @@
             margin: 0 auto 16px;
             color: var(--accent);
             font-size: 1.5rem;
-            transition: background 0.4s ease, color 0.4s ease;
-        }
+                    }
 
         .contact-title {
             font-weight: 600;
@@ -858,16 +835,14 @@
         .contact-value {
             color: var(--text-secondary);
             font-size: 0.9rem;
-            transition: color 0.4s ease;
-        }
+                    }
 
         /* Footer */
         footer {
             padding: 40px 0;
             border-top: 1px solid var(--border);
             text-align: center;
-            transition: border-color 0.4s ease;
-        }
+                    }
 
         .footer-links {
             display: flex;
@@ -879,7 +854,6 @@
         .footer-links a {
             color: var(--text-secondary);
             text-decoration: none;
-            transition: color 0.3s ease;
         }
 
         .footer-links a:hover {
@@ -889,8 +863,7 @@
         .footer-text {
             color: var(--text-muted);
             font-size: 0.85rem;
-            transition: color 0.4s ease;
-        }
+                    }
 
         .llms-badge {
             display: inline-flex;
@@ -903,7 +876,6 @@
             font-size: 0.8rem;
             color: var(--text-secondary);
             margin-top: 16px;
-            transition: background 0.4s ease, border-color 0.4s ease, color 0.4s ease;
         }
 
 
@@ -911,7 +883,7 @@
         .animate-on-scroll {
             opacity: 0;
             transform: translateY(40px);
-            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .animate-on-scroll.visible {
@@ -1108,7 +1080,10 @@
                                 <div class="photo-decoration photo-decoration-1"></div>
                                 <div class="photo-decoration photo-decoration-2"></div>
                                 <div class="photo-frame">
-                                    <img src="Lucky_photo_no-bg.png" alt="Lucky Verma" />
+                                    <picture>
+                                        <source srcset="Lucky_photo_no-bg.webp" type="image/webp">
+                                        <img src="Lucky_photo_no-bg.png" alt="Lucky Verma" width="380" height="450" fetchpriority="high" decoding="async" />
+                                    </picture>
                                 </div>
                                 <div class="floating-tags">
                                     <div class="tech-tag tech-tag-1">PyTorch</div>
@@ -1545,8 +1520,10 @@
             }
         }
 
-        // Initialize particles
-        for (let i = 0; i < 80; i++) {
+        // Initialize particles (fewer on mobile for performance)
+        const isMobile = window.innerWidth < 768;
+        const particleCount = isMobile ? 30 : 80;
+        for (let i = 0; i < particleCount; i++) {
             particles.push(new Particle());
         }
 
@@ -1579,7 +1556,10 @@
                 p.draw();
             });
 
-            drawConnections();
+            // Skip connections on mobile for better performance
+            if (!isMobile) {
+                drawConnections();
+            }
             requestAnimationFrame(animateParticles);
         }
         animateParticles();
