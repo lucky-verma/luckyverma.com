@@ -112,12 +112,12 @@ Machine Learning Scientist specializing in production agentic AI for national se
     {Eccalon LLC \small{(Defense AI contractor, \$162M+ federal contracts)}}{Nashville, TN}
     {Machine Learning Scientist}{Jun 2022 \textendash{} Present}
     \resumeItemListStart
-      \resumeItem{Architected and deployed \textbf{AEGIS}, a production agentic AI system automating FOCI compliance for the US defense supply chain, compressing a \textbf{40-week manual process to under 24 hours} by composing \textbf{LangGraph} orchestration, \textbf{DSPy} optimization, and 11-stage multi-hop reasoning across SAM.gov, SEC EDGAR, and GLEIF --- protecting \textbf{\$162M+} in federal contract integrity.}
-      \resumeItem{Engineered \textbf{knowledge graph} (PostgreSQL + Apache AGE) with entity resolution across \textbf{10M+} corporate records, achieving \textbf{95\%} accuracy in ownership-chain tracing with sub-10-second query response on complex multi-hop ownership chains.}
-      \resumeItem{Built full-stack research intelligence platform (\textbf{FastAPI}, 169 endpoints) with \textbf{93K+} vectorized document chunks, knowledge graph, and GPU-accelerated embeddings --- reducing manual literature review by an estimated \textbf{80\%} and serving as the analytical backbone for defense compliance research.}
+      \resumeItem{Architected and deployed \textbf{AEGIS}, a production agentic AI system automating FOCI compliance for the US defense supply chain, compressing a \textbf{40-week manual process to under 24 hours} by composing \textbf{LangGraph} orchestration, \textbf{DSPy} optimization, and 11-stage multi-hop reasoning across SAM.gov, SEC EDGAR, and GLEIF.}
+      \resumeItem{Engineered \textbf{knowledge graph} (PostgreSQL + Apache AGE) with entity resolution across SAM.gov, SEC EDGAR, and GLEIF corporate registries, achieving \textbf{95\%} accuracy in multi-hop ownership-chain tracing with sub-10-second query response.}
+      \resumeItem{Built production \textbf{document intelligence pipeline} with GPU-accelerated embeddings (\textbf{Ollama} + NIM fallback), \textbf{LanceDB} vector search, and \textbf{FalkorDB} knowledge graph --- automating multi-source research synthesis across federal databases and regulatory documents.}
       \resumeItem{Designed \textbf{CodeCompliant}: automated security analysis platform integrating \textbf{CodeQL} static analysis with LLM-powered vulnerability assessment and autonomous remediation across \textbf{8 languages}, cutting security review time by \textbf{85\%}.}
-      \resumeItem{Deployed production \textbf{RAG pipelines} on AWS with multi-path reasoning and hybrid vector/keyword search, improving retrieval relevance by \textbf{75\%} over baseline; built GPU-accelerated CV pipeline (\textbf{PyTorch}, CUDA) with \textbf{95\%+} accuracy.}
-      \resumeItem{Owned end-to-end MLOps infrastructure --- Docker multi-service orchestration, Terraform IaC, CI/CD, circuit breakers, and multi-backend embedding fallback --- achieving \textbf{99\%+} uptime across \textbf{6 production ML services} with zero external SRE support.}
+      \resumeItem{Deployed production \textbf{RAG pipelines} on AWS with multi-path reasoning and hybrid vector/keyword search, significantly improving retrieval relevance over keyword-only baseline; built GPU-accelerated CV pipeline (\textbf{PyTorch}, CUDA) with \textbf{95\%+} accuracy.}
+      \resumeItem{Owned end-to-end MLOps infrastructure --- Docker multi-service orchestration, Terraform IaC, CI/CD, circuit breakers, and multi-backend embedding fallback --- maintaining high availability across \textbf{6 production ML services} with zero external SRE support.}
     \resumeItemListEnd
 
   \resumeSubheading
@@ -159,7 +159,7 @@ Machine Learning Scientist specializing in production agentic AI for national se
     {InfiniteContext-1B: Million-Token LLM Architecture}{\href{https://github.com/lucky-verma/InfiniteContext-1B}{GitHub}}
     {DeepSeek-V3 MLA | Distributed FSDP | Consumer GPU inference}{}
     \resumeItemListStart
-      \resumeItem{Achieved \textbf{93.7\%} KV cache reduction (8MB vs 128MB/1k tokens) enabling 128k-context inference on RTX 2070; distributed training on \textbf{4$\times$A100s} with \textbf{92\%} GPU utilization via custom Triton kernels.}
+      \resumeItem{Designing MLA-based LLM architecture targeting \textbf{93\%+} KV cache reduction for million-token inference on consumer GPUs; implementing custom Triton kernels and FSDP distributed training pipeline on SLURM clusters. \textit{[In progress]}}
     \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -177,12 +177,18 @@ Machine Learning Scientist specializing in production agentic AI for national se
     {Bachelor of Technology in Electrical \& Electronics Engineering \textendash{} GPA: 3.9}{May 2019}
 \resumeSubHeadingListEnd
 
+%-----------PUBLICATIONS-----------
+\section{Publications}
+
+\resumeItemListStart
+  \resumeItem{L. Verma, N. Banerjee. ``AEGIS: Automated Foreign Ownership Assessment for Defense Supply Chain Security.'' \textit{In preparation for AISec @ ACM CCS 2026.}}
+\resumeItemListEnd
+
 %-----------RECOGNITION-----------
-\section{Recognition \& Leadership}
+\section{Recognition}
 
 \resumeItemListStart
   \resumeItem{\textbf{DARPA Catalyst Award} (\$50K) \textendash{} Caselet (UMBC), selected from \textbf{250+ teams} for AI-powered national security workforce tools}
-  \resumeItem{Winner, \textbf{HackUMBC 2021} \textendash{} Best Docker Application (200+ participants), University of Maryland Baltimore County}
 \resumeItemListEnd
 
 \end{document}
