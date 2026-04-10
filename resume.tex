@@ -1,6 +1,7 @@
 %-------------------------
 % Resume — ATS Optimized
 % Lucky Verma — Single Page
+% Target: Senior AI/ML Engineer (AI-Native + Enterprise Tech)
 %-------------------------
 \documentclass[a4paper,10pt]{article}
 
@@ -26,7 +27,7 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Tight margins for single-page fit
-\usepackage[top=0.3in, bottom=0.3in, left=0.5in, right=0.5in]{geometry}
+\usepackage[top=0.25in, bottom=0.25in, left=0.45in, right=0.45in]{geometry}
 
 \urlstyle{same}
 
@@ -36,12 +37,12 @@
 
 %--- Section formatting ---
 \titleformat{\section}{
-  \vspace{-3pt}\Large\bfseries\scshape\raggedright
+  \vspace{-4pt}\Large\bfseries\scshape\raggedright
 }{}{0em}{}[\color{black}\vspace{-6pt}\hrulefill \vspace{-5pt}]
 
-\titlespacing*{\section}{0pt}{5pt}{3pt}
+\titlespacing*{\section}{0pt}{4pt}{2pt}
 
-% Custom commands (same as Maitry's template)
+% Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{#1 \vspace{-2pt}}
 }
@@ -73,8 +74,8 @@
 
 %----------HEADING----------
 \begin{center}
-    {\fontsize{26}{32}\selectfont\bfseries Lucky Verma} \\ \vspace{2pt}
-    {\small\textsc{Senior Machine Learning Engineer}} \\ \vspace{4pt}
+    {\fontsize{24}{30}\selectfont\bfseries Lucky Verma} \\ \vspace{2pt}
+    {\small\textsc{Senior AI/ML Engineer | Agentic Systems | Defense \& National Security}} \\ \vspace{3pt}
     \small
     \faPhone\ 667\textendash910\textendash4149 $|$
     \faEnvelope\ \href{mailto:luckie.verma30@gmail.com}{luckie.verma30@gmail.com} $|$
@@ -88,7 +89,7 @@
 \section{Summary}
 \vspace{1pt}
 \small{
-Senior AI/ML Engineer with 5+ years building production-scale agentic AI systems, multi-hop reasoning pipelines, and automated security analysis platforms. Sole architect of AEGIS, an 86K-line AI platform for defense foreign ownership detection. Expert in LLMs, RAG architectures, knowledge graphs, and computer vision. MS CS from UMBC (3.97 GPA).
+AI/ML Engineer who sole-built an \textbf{86,000-line production AI platform} for US defense supply chain security. 5+ years architecting end-to-end agentic systems with LLMs, knowledge graphs, and multi-hop reasoning --- from research prototype to enterprise deployment serving government stakeholders. Built the first publicly described automated system for foreign ownership risk assessment under \textbf{32 CFR 117.11}. Expert in production RAG, agentic orchestration (LangGraph/DSPy), and distributed training.
 }
 
 %-----------WORK EXPERIENCE-----------
@@ -97,29 +98,36 @@ Senior AI/ML Engineer with 5+ years building production-scale agentic AI systems
 \resumeSubHeadingListStart
 
   \resumeSubheading
-    {Eccalon LLC}{Fremont, CA}
+    {Eccalon LLC \small{(Defense contractor; CEO = former Deputy Asst. Secretary of Defense)}}{Nashville, TN}
     {Senior Machine Learning Engineer}{Jun 2022 \textendash{} Present}
     \resumeItemListStart
-      \resumeItem{Sole-built \textbf{AEGIS}, a production-scale agentic AI platform (86K lines) combining \textbf{LangGraph} orchestration with \textbf{DSPy} optimization for automated foreign entity analysis across SAM.gov, EDGAR, and GLEIF data sources.}
-      \resumeItem{Implemented knowledge graph system using \textbf{PostgreSQL + Apache AGE}, enabling dynamic relationship discovery across \textbf{10M+} entities with \textbf{95\%} accuracy for defense supply chain risk assessment.}
-      \resumeItem{Built Research Cockpit: \textbf{169-endpoint} FastAPI platform with \textbf{93K+} vectorized chunks in LanceDB, FalkorDB knowledge graph, and 14 data sources for automated research workflows.}
-      \resumeItem{Designed \textbf{CodeCompliant}, an automated security analysis platform integrating \textbf{CodeQL} with LLM-powered vulnerability assessment across \textbf{8+} languages, reducing security review time by \textbf{85\%}.}
-      \resumeItem{Developed production scene-text detection system using \textbf{PyTorch} with \textbf{95\%+} accuracy; built GPU-accelerated 3D optimization pipeline using \textbf{CUDA}, reducing processing time by \textbf{60\%}.}
-      \resumeItem{Deployed production \textbf{RAG systems} on AWS with enterprise data contextualization, achieving \textbf{75\%} improved retrieval efficiency using multi-path reasoning and hybrid search.}
+      \resumeItem{Sole architect and builder of \textbf{AEGIS}: 86K-line agentic AI platform that automates foreign ownership detection for the US defense supply chain, combining \textbf{LangGraph} orchestration, \textbf{DSPy} optimization, and 11-stage multi-hop reasoning across SAM.gov, SEC EDGAR, and GLEIF.}
+      \resumeItem{Engineered \textbf{knowledge graph} (PostgreSQL + Apache AGE) with entity resolution across \textbf{10M+} corporate records, achieving \textbf{95\%} accuracy in ownership-chain tracing for FOCI compliance --- a process that previously required \textbf{40+ weeks} of manual review.}
+      \resumeItem{Built \textbf{Research Cockpit}: 169-endpoint FastAPI platform with \textbf{93K+} vectorized chunks (LanceDB), FalkorDB knowledge graph, Ollama GPU embeddings, and 14 data sources --- full-stack research automation serving as the intelligence backbone.}
+      \resumeItem{Designed \textbf{CodeCompliant}: automated security analysis platform integrating \textbf{CodeQL} static analysis with LLM-powered vulnerability assessment and autonomous remediation across \textbf{8 languages}, cutting security review time by \textbf{85\%}.}
+      \resumeItem{Deployed production \textbf{RAG pipelines} on AWS with multi-path reasoning and hybrid vector/keyword search, improving retrieval relevance by \textbf{75\%} over baseline; built GPU-accelerated CV pipeline (\textbf{PyTorch}, CUDA) with \textbf{95\%+} accuracy.}
+      \resumeItem{Architected full infrastructure: Docker multi-service stacks, Terraform IaC, CI/CD, rate limiting, circuit breakers, multi-backend embedding fallback (Ollama $\rightarrow$ NIM), and enterprise authentication --- zero external SRE support.}
     \resumeItemListEnd
 
   \resumeSubheading
     {University of Maryland, Baltimore County}{Baltimore, MD}
     {Graduate Research Assistant}{Jan 2022 \textendash{} May 2023}
     \resumeItemListStart
-      \resumeItem{Developed ensemble \textbf{1D U-Net} architecture for biomedical signal classification using PPG data, achieving \textbf{92\%} accuracy on sleep-stage detection with real-time time-series processing.}
+      \resumeItem{Developed ensemble \textbf{1D U-Net} for biomedical signal classification (PPG $\rightarrow$ sleep staging), achieving \textbf{92\%} accuracy; built web-based data science learning platform using CV/ML pipelines with \textbf{pandas} and \textbf{Streamlit}.}
     \resumeItemListEnd
 
   \resumeSubheading
     {Vast Dream Group}{Sydney, Australia (Remote)}
     {AI Specialist}{Jan 2021 \textendash{} Aug 2021}
     \resumeItemListStart
-      \resumeItem{Built production recommendation engine using \textbf{BART} for zero-shot classification fine-tuned on MNLI (\textbf{96\%} accuracy); architected AI systems contributing to \textbf{\$1M+} revenue pipeline.}
+      \resumeItem{Built recommendation engine using \textbf{BART} zero-shot classification (96\% accuracy on MNLI); architected AI measurement systems for optics industry, contributing to \textbf{\$1M+} revenue pipeline across 3 product lines.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {TandM Techlabs}{Bangalore, India}
+    {Full Stack Developer}{Jan 2020 \textendash{} Dec 2020}
+    \resumeItemListStart
+      \resumeItem{Built urban mobility platform with geospatial ML: \textbf{Pandana} accessibility metrics, \textbf{Valhalla/OSMnx} route optimization on \textbf{PostGIS}, cached with \textbf{Redis} and containerized on \textbf{Kubernetes} --- serving real-time discovery for B2B logistics.}
     \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -129,24 +137,31 @@ Senior AI/ML Engineer with 5+ years building production-scale agentic AI systems
 
 \vspace{2pt}
 \begin{tabularx}{\textwidth}{r X}
-  \small\textbf{LLM / GenAI} & \small Fine-tuning, RLHF/DPO, \textbf{RAG}, Agentic AI, Tool Use, \textbf{vLLM}, Prompt Engineering \\
-  \small\textbf{Frameworks} & \small \textbf{PyTorch}, \textbf{LangChain}, \textbf{LangGraph}, \textbf{DSPy}, HuggingFace, \textbf{FastAPI}, Streamlit \\
-  \small\textbf{Distributed} & \small \textbf{FSDP}, DeepSpeed, \textbf{SLURM}, Multi-GPU Training, Triton Kernels \\
-  \small\textbf{Infrastructure} & \small \textbf{Docker}, \textbf{Kubernetes}, Terraform, \textbf{AWS} (ECS, S3, Bedrock), PostgreSQL, Redis \\
-  \small\textbf{Specialized} & \small \textbf{Knowledge Graphs} (FalkorDB, Apache AGE), CodeQL, Computer Vision, OCR, \textbf{CUDA} \\
-  \small\textbf{Languages} & \small \textbf{Python}, SQL, C++, JavaScript, Bash, CUDA \\
+  \small\textbf{AI / LLM} & \small \textbf{RAG}, Agentic AI, \textbf{LangGraph}, \textbf{DSPy}, LangChain, vLLM, Fine-tuning (LoRA, RLHF/DPO), Tool Use, HuggingFace Transformers \\
+  \small\textbf{ML / DL} & \small \textbf{PyTorch}, FSDP, DeepSpeed, SLURM Multi-GPU, Triton Kernels, \textbf{Computer Vision}, NLP, \textbf{CUDA} \\
+  \small\textbf{Data / Infra} & \small \textbf{Knowledge Graphs} (Apache AGE, FalkorDB), PostgreSQL, LanceDB, Redis, \textbf{FastAPI}, \textbf{Docker}, Kubernetes, Terraform, \textbf{AWS} \\
+  \small\textbf{Languages} & \small \textbf{Python}, SQL, C++, JavaScript, Bash \\
 \end{tabularx}
 
 %-----------KEY PROJECTS-----------
-\section{Key Projects}
+\section{Key Projects \& Open Source}
 
 \resumeSubHeadingListStart
+
   \resumeSubheadingSingle
-    {InfiniteContext-1B: Million-Token LLM System}{}
-    {DeepSeek-V3 MLA architecture | Distributed FSDP training}{}
+    {FOCI-Bench: First Benchmark for Foreign Ownership Risk Detection}{\href{https://github.com/lucky-verma}{GitHub}}
+    {52 real-world companies | 10 baselines | Multi-source entity resolution}{}
     \resumeItemListStart
-      \resumeItem{Achieved \textbf{93.7\%} KV cache memory reduction (8MB vs 128MB per 1k tokens), enabling inference on consumer GPUs (RTX 2070 for 128k context). Distributed training on \textbf{4x A100s} with \textbf{92\%} GPU utilization.}
+      \resumeItem{Created the first public benchmark for evaluating automated FOCI (Foreign Ownership, Control, or Influence) detection systems, covering ownership tracing, beneficial ownership, and state-ownership factors under \textbf{32 CFR 117.11}.}
     \resumeItemListEnd
+
+  \resumeSubheadingSingle
+    {InfiniteContext-1B: Million-Token LLM Architecture}{\href{https://github.com/lucky-verma/InfiniteContext-1B}{GitHub}}
+    {DeepSeek-V3 MLA | Distributed FSDP | Consumer GPU inference}{}
+    \resumeItemListStart
+      \resumeItem{Achieved \textbf{93.7\%} KV cache reduction (8MB vs 128MB/1k tokens) enabling 128k-context inference on RTX 2070; distributed training on \textbf{4$\times$A100s} with \textbf{92\%} GPU utilization via custom Triton kernels.}
+    \resumeItemListEnd
+
 \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------
@@ -156,18 +171,19 @@ Senior AI/ML Engineer with 5+ years building production-scale agentic AI systems
   \resumeSubheadingSingle
     {University of Maryland, Baltimore County}{Baltimore, MD}
     {Master of Science in Computer Science \textendash{} GPA: 3.97}{May 2023}
-  \vspace{4pt}
+  \vspace{3pt}
   \resumeSubheadingSingle
     {SRM University}{Chennai, India}
     {Bachelor of Technology in Electrical \& Electronics Engineering \textendash{} GPA: 3.9}{May 2019}
 \resumeSubHeadingListEnd
 
 %-----------RECOGNITION-----------
-\section{Recognition}
+\section{Recognition \& Leadership}
 
 \resumeItemListStart
-  \resumeItem{Winner, \textbf{HackUMBC 2021} \textendash{} Best Docker Application, University of Maryland Baltimore County}
-  \resumeItem{Vice Chairperson, Versio SRM University \textendash{} Led \textbf{100+} students, managed 15+ technical projects}
+  \resumeItem{Winner, \textbf{HackUMBC 2021} \textendash{} Best Docker Application (200+ participants), University of Maryland Baltimore County}
+  \resumeItem{Self-hosted \textbf{27-service infrastructure} (Proxmox, ZFS, Cloudflare Tunnels, Docker) \textendash{} production-grade homelab supporting all research systems}
+  \resumeItem{Vice Chairperson, Versio SRM University \textendash{} Led \textbf{100+} students across 15 technical projects and 20+ inter-college collaborations}
 \resumeItemListEnd
 
 \end{document}
