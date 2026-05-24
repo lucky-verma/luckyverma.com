@@ -1,0 +1,182 @@
+%-------------------------
+% Resume — ATS Optimized
+% Lucky Verma — Single Page
+% Target: Machine Learning Engineer (AI-Native + Enterprise Tech)
+%-------------------------
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Tight margins for single-page fit
+\usepackage[top=0.25in, bottom=0.25in, left=0.45in, right=0.45in]{geometry}
+
+\urlstyle{same}
+
+% ATS Readability
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+%--- Section formatting ---
+\titleformat{\section}{
+  \vspace{-4pt}\Large\bfseries\scshape\raggedright
+}{}{0em}{}[\color{black}\vspace{-6pt}\hrulefill \vspace{-5pt}]
+
+\titlespacing*{\section}{0pt}{4pt}{2pt}
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-2pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{#2} \\
+      \textbf{\small\textsc{#3}} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingSingle}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{#2} \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.1in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, label=\textbullet]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\setlength{\footskip}{4.08003pt}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\fontsize{24}{30}\selectfont\bfseries Lucky Verma} \\ \vspace{2pt}
+    {\small\textsc{Machine Learning Engineer | Agentic Systems | Knowledge Graphs | RAG}} \\ \vspace{3pt}
+    \small
+    \faPhone\ 667\textendash910\textendash4149 $|$
+    \faEnvelope\ \href{mailto:luckie.verma30@gmail.com}{luckie.verma30@gmail.com} $|$
+    \faLinkedin\ \href{https://linkedin.com/in/lucky-verma}{LinkedIn} $|$
+    \faGlobe\ \href{https://luckyverma.com}{luckyverma.com} $|$
+    \faGithub\ \href{https://github.com/lucky-verma}{GitHub} $|$
+    \faMapMarker*\ Nashville Metro, TN
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+\vspace{1pt}
+\small{
+Machine Learning Engineer with 4+ years building production agentic AI systems, knowledge graphs, and deep learning pipelines for large-scale data infrastructure. Expert in multi-agent orchestration (LangGraph, DSPy), RAG pipelines, entity resolution, model evaluation, and real-time inference serving on GPU clusters.
+}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+
+\vspace{2pt}
+\begin{tabularx}{\textwidth}{r X}
+  \small\textbf{AI / LLM} & \small \textbf{RAG}, Agentic AI, \textbf{LangGraph}, \textbf{DSPy}, LangChain, vLLM, Fine-tuning (LoRA, RLHF/DPO), Tool Use, HF Transformers \\
+  \small\textbf{ML / DL} & \small \textbf{PyTorch}, TensorFlow, FSDP, DeepSpeed, SLURM Multi-GPU, Triton Kernels, \textbf{Deep Learning}, \textbf{Computer Vision}, NLP, \textbf{CUDA} \\
+  \small\textbf{Infra} & \small \textbf{Knowledge Graphs} (Apache AGE, FalkorDB), PostgreSQL, LanceDB, \textbf{FastAPI}, \textbf{Docker}, K8s, Terraform, \textbf{AWS}, Redis, Model Monitoring \\
+  \small\textbf{Languages} & \small \textbf{Python}, SQL, C++, JavaScript, Bash \\
+\end{tabularx}
+
+%-----------WORK EXPERIENCE-----------
+\section{Work Experience}
+
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Eccalon LLC \small{(Defense AI contractor, \$162M+ federal contracts)}}{Nashville, TN}
+    {Machine Learning Engineer}{Jun 2022 \textendash{} Present}
+    \resumeItemListStart
+      \resumeItem{Architected and deployed \textbf{AEGIS}, a production \textbf{deep learning} + agentic AI system for automated compliance assessment, compressing a \textbf{40-week manual process to under 24 hours} through \textbf{LangGraph} orchestration, \textbf{DSPy} optimization, and 11-stage multi-hop reasoning --- serving \textbf{production deployment} across federal data sources (SAM.gov, SEC EDGAR, GLEIF).}
+      \resumeItem{Engineered \textbf{knowledge graph} (PostgreSQL + Apache AGE) with entity resolution across SAM.gov, SEC EDGAR, and GLEIF corporate registries, achieving \textbf{95\%} accuracy in multi-hop ownership-chain tracing with sub-10-second query response.}
+      \resumeItem{Built production \textbf{document intelligence pipeline} with GPU-accelerated embeddings (\textbf{Ollama} + NIM fallback), \textbf{LanceDB} vector search, and \textbf{FalkorDB} knowledge graph --- reducing multi-source research synthesis from days of manual review to minutes across federal databases and regulatory documents.}
+      \resumeItem{Built \textbf{model evaluation} framework benchmarking 10 LLM baselines across 52 real-world entities with \textbf{feature engineering}, contamination testing, and multi-annotator validation --- establishing the first public evaluation methodology for automated compliance systems under \textbf{32 CFR 117.11}.}
+      \resumeItem{Deployed production \textbf{RAG pipelines} on AWS with multi-path reasoning and hybrid vector/keyword search, improving retrieval relevance \textbf{40\%+} over keyword-only baseline; built GPU-accelerated CV pipeline (\textbf{PyTorch}, CUDA) with \textbf{95\%+} accuracy.}
+      \resumeItem{Owned end-to-end \textbf{ML infrastructure} --- Docker multi-service orchestration, Terraform IaC, \textbf{CI/CD}, \textbf{model serving}, \textbf{monitoring}, and multi-backend embedding fallback --- maintaining \textbf{99\%+ uptime} across \textbf{6 production ML services} with \textbf{distributed systems} architecture.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {University of Maryland, Baltimore County}{Baltimore, MD}
+    {Graduate Research Assistant}{Jan 2022 \textendash{} May 2023}
+    \resumeItemListStart
+      \resumeItem{Developed ensemble \textbf{1D U-Net} for biomedical signal classification (PPG $\rightarrow$ sleep staging), achieving \textbf{92\%} accuracy; built web-based data science learning platform using CV/ML pipelines with \textbf{pandas} and \textbf{Streamlit}.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Vast Dream Group}{Mumbai, India (Remote)}
+    {AI Specialist}{Jan 2021 \textendash{} Aug 2021}
+    \resumeItemListStart
+      \resumeItem{Built recommendation engine using \textbf{BART} zero-shot classification (96\% accuracy on MNLI); architected AI measurement systems for optics industry, contributing to \textbf{\$1M+} revenue pipeline across 3 product lines.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {TandM Techlabs}{Secunderabad, India}
+    {Software Developer}{Jun 2018 \textendash{} Dec 2020}
+    \resumeItemListStart
+      \resumeItem{Built urban mobility platform with geospatial ML: \textbf{Pandana} accessibility metrics, \textbf{Valhalla/OSMnx} route optimization on \textbf{PostGIS}, cached with \textbf{Redis} and containerized on \textbf{Kubernetes} --- serving real-time discovery for B2B logistics.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------KEY PROJECTS-----------
+\section{Key Projects \& Open Source}
+
+\resumeSubHeadingListStart
+
+  \resumeSubheadingSingle
+    {FOCI-Bench: First Benchmark for Foreign Ownership Risk Detection}{}
+    {52 real-world companies | 10 baselines | Multi-source entity resolution}{}
+    \resumeItemListStart
+      \resumeItem{Created the first public benchmark for evaluating automated FOCI (Foreign Ownership, Control, or Influence) detection systems, covering ownership tracing, beneficial ownership, and state-ownership factors under \textbf{32 CFR 117.11}.}
+    \resumeItemListEnd
+
+  \resumeSubheadingSingle
+    {InfiniteContext-1B: Million-Token LLM Architecture}{\href{https://github.com/lucky-verma/InfiniteContext-1B}{GitHub}}
+    {DeepSeek-V3 MLA | Distributed FSDP | Consumer GPU inference}{}
+    \resumeItemListStart
+      \resumeItem{Designing MLA-based LLM architecture targeting \textbf{93\%+} KV cache reduction for million-token inference on consumer GPUs; implementing custom Triton kernels and FSDP distributed training pipeline on SLURM clusters. \textit{[In progress]}}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+
+\resumeSubHeadingListStart
+  \resumeSubheadingSingle
+    {University of Maryland, Baltimore County}{Baltimore, MD}
+    {Master of Science in Computer Science \textendash{} GPA: 3.97}{May 2023}
+    \resumeItemListStart
+      \resumeItem{\textbf{DARPA Catalyst Award} (\$50K) \textendash{} Caselet, selected from \textbf{250+ teams} for AI-powered national security workforce tools}
+    \resumeItemListEnd
+  \resumeSubheadingSingle
+    {SRM University}{Chennai, India}
+    {Bachelor of Technology in Electrical \& Electronics Engineering \textendash{} GPA: 3.9}{May 2019}
+\resumeSubHeadingListEnd
+
+\end{document}

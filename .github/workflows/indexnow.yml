@@ -1,0 +1,14 @@
+name: IndexNow Ping
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping IndexNow
+        run: |
+          curl -s "https://api.indexnow.org/indexnow?url=https://luckyverma.com/&key=757c963c8af64ba6b9636a7360257c0f&keyLocation=https://luckyverma.com/757c963c8af64ba6b9636a7360257c0f.txt"
+          echo "IndexNow pinged"

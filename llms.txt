@@ -1,0 +1,32 @@
+# Lucky Verma - AI/ML Engineer
+
+> Personal website of Lucky Verma, Machine Learning Engineer
+
+## About
+Lucky Verma is a Machine Learning Engineer with 4+ years building production AI systems, agentic platforms, and document intelligence solutions. MS in Computer Science from University of Maryland, Baltimore County (UMBC).
+
+## Contact
+- Email: luckie.verma30@gmail.com
+- Website: https://luckyverma.com
+- GitHub: https://github.com/lucky-verma
+- LinkedIn: https://linkedin.com/in/lucky-verma
+
+## Expertise
+- LLM Development (distributed training, custom architectures, long-context models)
+- Agentic AI Systems (LangChain, tool use, multi-step reasoning)
+- Document Intelligence (LayoutLM, OCR, information extraction)
+- RAG Systems (retrieval-augmented generation, vector databases)
+- Production ML (PyTorch, FastAPI, MLOps, AWS)
+
+## Notable Projects
+- InfiniteContext-1B: Production LLM with 1M token context using DeepSeek MLA, 93.7% KV cache reduction
+- Document Classification using LayoutLM (35 GitHub stars)
+- US Driver License Data Extraction (24 GitHub stars)
+- Sleep-Awake Classification using PPG (17 GitHub stars)
+- ABP Estimation using PPG (10 GitHub stars)
+
+## Tech Stack
+Python, PyTorch, PyTorch FSDP, Triton, LangChain, FastAPI, RAG, Transformers, vLLM, Kubernetes, AWS, Docker, MLOps
+
+## Current Role
+Machine Learning Engineer at Eccalon LLC
