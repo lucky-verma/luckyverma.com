@@ -8,7 +8,25 @@ jobs:
   indexnow:
     runs-on: ubuntu-latest
     steps:
-      - name: Ping IndexNow
+      - name: Ping IndexNow URLs
         run: |
-          curl -s "https://api.indexnow.org/indexnow?url=https://luckyverma.com/&key=757c963c8af64ba6b9636a7360257c0f&keyLocation=https://luckyverma.com/757c963c8af64ba6b9636a7360257c0f.txt"
-          echo "IndexNow pinged"
+          KEY="757c963c8af64ba6b9636a7360257c0f"
+          KEY_LOCATION="https://luckyverma.com/757c963c8af64ba6b9636a7360257c0f.txt"
+          URLS=(
+            "https://luckyverma.com/"
+            "https://luckyverma.com/work.html"
+            "https://luckyverma.com/research.html"
+            "https://luckyverma.com/service.html"
+            "https://luckyverma.com/writing.html"
+            "https://luckyverma.com/cv.html"
+            "https://luckyverma.com/llms.txt"
+            "https://luckyverma.com/sitemap.xml"
+          )
+
+          for url in "${URLS[@]}"; do
+            curl -fsS --get "https://api.indexnow.org/indexnow" \
+              --data-urlencode "url=${url}" \
+              --data-urlencode "key=${KEY}" \
+              --data-urlencode "keyLocation=${KEY_LOCATION}"
+            echo "IndexNow pinged ${url}"
+          done

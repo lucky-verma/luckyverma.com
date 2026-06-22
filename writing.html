@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing | Lucky Verma</title>
+    <meta name="description" content="Technical notes by Lucky Verma on production RAG, traceable AI systems, ownership-chain reasoning, model evaluation, and applied machine learning.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="color-scheme" content="light dark">
+    <link rel="canonical" href="https://luckyverma.com/writing.html">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="llms" href="llms.txt" type="text/plain">
+
+    <meta property="og:title" content="Writing | Lucky Verma">
+    <meta property="og:description" content="Technical notes on production RAG, traceable AI systems, ownership-chain reasoning, and ML evaluation.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://luckyverma.com/writing.html">
+    <meta property="og:image" content="https://luckyverma.com/og-image.webp">
+    <meta property="og:site_name" content="Lucky Verma">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Writing | Lucky Verma">
+    <meta name="twitter:description" content="Technical notes on production RAG, traceable AI systems, ownership-chain reasoning, and ML evaluation.">
+    <meta name="twitter:image" content="https://luckyverma.com/og-image.webp">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Lucky Verma home">
+            <span class="brand-mark">LV</span>
+            <span>
+                <strong>Lucky Verma</strong>
+                <small>Machine Learning Engineer</small>
+            </span>
+        </a>
+        <nav class="site-nav" aria-label="Primary navigation">
+            <a href="work.html">Work</a>
+            <a href="research.html">Research</a>
+            <a href="service.html">Service</a>
+            <a href="writing.html" aria-current="page">Writing</a>
+            <a href="cv.html">CV</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Toggle color theme">
+            <span class="theme-icon" aria-hidden="true"></span>
+        </button>
+    </header>
+
+    <main id="main">
+        <section class="page-hero">
+            <p class="eyebrow">Technical writing</p>
+            <h1>Field notes on building AI systems that need evidence, not just answers.</h1>
+            <p>
+                Short, durable notes on production RAG, model evaluation, traceability,
+                ownership-chain reasoning, and the practical side of deploying AI into
+                workflows where mistakes have consequences.
+            </p>
+        </section>
+
+        <section class="content-block">
+            <div class="note-list">
+                <article class="note-card">
+                    <div>
+                        <time datetime="2026-06-03">Updated Jun 2026</time>
+                        <p class="card-kicker">Field note</p>
+                    </div>
+                    <div>
+                        <h2>Traceability is a product requirement for production RAG</h2>
+                        <p>
+                            Retrieval quality is not enough in high-stakes settings. A useful
+                            RAG system needs source identity, snippet provenance, retryable
+                            queries, evaluator traces, and a clear distinction between retrieved
+                            evidence and model synthesis. That is the difference between a demo
+                            that looks fluent and a workflow an expert can audit.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="note-card">
+                    <div>
+                        <time datetime="2026-06-03">Updated Jun 2026</time>
+                        <p class="card-kicker">Field note</p>
+                    </div>
+                    <div>
+                        <h2>Ownership-chain reasoning is not entity extraction</h2>
+                        <p>
+                            Extracting company names is only the first layer. The hard part is
+                            resolving entities across registries, tracking control paths,
+                            preserving time and jurisdiction context, and separating direct
+                            evidence from inferred links. Graph structure matters because the
+                            review question is relational.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="note-card">
+                    <div>
+                        <time datetime="2026-06-03">Updated Jun 2026</time>
+                        <p class="card-kicker">Field note</p>
+                    </div>
+                    <div>
+                        <h2>Evaluation plans should be written before model runs</h2>
+                        <p>
+                            The fastest way to fool yourself is to inspect results first and
+                            decide the metric afterward. For research systems and production
+                            ML alike, useful evaluation starts with the claim, the failure mode,
+                            the comparison baseline, and the rule for changing direction.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section band">
+            <div class="section-heading">
+                <p class="eyebrow">External writing</p>
+                <h2>Long-form posts and public notes.</h2>
+                <p>
+                    Medium remains the external publication surface for longer posts.
+                    This site keeps the stable technical index and canonical profile links.
+                </p>
+                <div class="resource-links">
+                    <a href="https://lucky-verma.medium.com" target="_blank" rel="noopener noreferrer">Medium</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div>
+            <strong>Lucky Verma</strong>
+            <p>Machine Learning Engineer &middot; Nashville Metro, TN</p>
+        </div>
+        <nav aria-label="Footer navigation">
+            <a href="mailto:luckie.verma30@gmail.com">Email</a>
+            <a href="https://github.com/lucky-verma" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://linkedin.com/in/lucky-verma" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="llms.txt">llms.txt</a>
+        </nav>
+    </footer>
+    <script src="site.js"></script>
+</body>
+</html>

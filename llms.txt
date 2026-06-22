@@ -1,32 +1,50 @@
-# Lucky Verma - AI/ML Engineer
+# Lucky Verma
 
-> Personal website of Lucky Verma, Machine Learning Engineer
+> Machine Learning Engineer building production AI systems, agentic workflows, knowledge graphs, RAG pipelines, and document intelligence infrastructure.
 
-## About
-Lucky Verma is a Machine Learning Engineer with 4+ years building production AI systems, agentic platforms, and document intelligence solutions. MS in Computer Science from University of Maryland, Baltimore County (UMBC).
+## Canonical Website
+- Home: https://luckyverma.com/
+- Work: https://luckyverma.com/work.html
+- Research: https://luckyverma.com/research.html
+- Service: https://luckyverma.com/service.html
+- Writing: https://luckyverma.com/writing.html
+- CV: https://luckyverma.com/cv.html
+- Resume PDF: https://luckyverma.com/Lucky_Verma_Resume.pdf
 
-## Contact
+## Public Identity
+- Name: Lucky Verma
+- Role: Machine Learning Engineer
+- Location: Nashville Metro, TN
 - Email: luckie.verma30@gmail.com
-- Website: https://luckyverma.com
 - GitHub: https://github.com/lucky-verma
 - LinkedIn: https://linkedin.com/in/lucky-verma
+- ORCID: https://orcid.org/0009-0008-2884-1051
+- Medium: https://lucky-verma.medium.com
 
-## Expertise
-- LLM Development (distributed training, custom architectures, long-context models)
-- Agentic AI Systems (LangChain, tool use, multi-step reasoning)
-- Document Intelligence (LayoutLM, OCR, information extraction)
-- RAG Systems (retrieval-augmented generation, vector databases)
-- Production ML (PyTorch, FastAPI, MLOps, AWS)
+## Areas
+- Production AI systems
+- Agentic AI workflows
+- Retrieval-augmented generation
+- Knowledge graphs
+- Entity resolution
+- Document intelligence
+- Model evaluation
+- Machine learning infrastructure
 
-## Notable Projects
-- InfiniteContext-1B: Production LLM with 1M token context using DeepSeek MLA, 93.7% KV cache reduction
-- Document Classification using LayoutLM (35 GitHub stars)
-- US Driver License Data Extraction (24 GitHub stars)
-- Sleep-Awake Classification using PPG (17 GitHub stars)
-- ABP Estimation using PPG (10 GitHub stars)
+## Public Research
+- "When Does Removing LayerNorm Help? Activation Bounding as a Regime-Dependent Implicit Regularizer"
+- Author: Lucky Verma
+- arXiv: https://arxiv.org/abs/2604.23434
+- DOI: https://doi.org/10.48550/arXiv.2604.23434
+- Code: https://github.com/lucky-verma/dyt-composition-study
 
-## Tech Stack
-Python, PyTorch, PyTorch FSDP, Triton, LangChain, FastAPI, RAG, Transformers, vLLM, Kubernetes, AWS, Docker, MLOps
+## Public Engineering Artifacts
+- GitHub profile: 92 public repositories and 122 total stars as of 2026-06-03.
+- Document Classification using LayoutLM: 35 GitHub stars.
+- US Driver License Data Extraction: 26 GitHub stars.
+- Sleep-Awake Classification using PPG: 16 GitHub stars.
+- ABP Estimation using PPG: 10 GitHub stars.
+- InfiniteContext-1B: active long-context LLM architecture workbench.
 
-## Current Role
-Machine Learning Engineer at Eccalon LLC
+## Disclosure Note
+Some production systems, reviewer records, and research artifacts contain confidential customer data, private venue material, or unreleased benchmark details. The public website intentionally limits those descriptions to verifiable and discloseable facts.
