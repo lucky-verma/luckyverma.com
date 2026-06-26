@@ -4,11 +4,11 @@
 
 ## Canonical Website
 - Home: https://luckyverma.com/
-- Work: https://luckyverma.com/work.html
-- Research: https://luckyverma.com/research.html
-- Service: https://luckyverma.com/service.html
-- Writing: https://luckyverma.com/writing.html
-- CV: https://luckyverma.com/cv.html
+- Work: https://luckyverma.com/work
+- Research: https://luckyverma.com/research
+- Service: https://luckyverma.com/service
+- Writing: https://luckyverma.com/writing
+- CV: https://luckyverma.com/cv
 - Resume PDF: https://luckyverma.com/Lucky_Verma_Resume.pdf
 
 ## Public Identity
