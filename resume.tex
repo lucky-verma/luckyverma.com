@@ -98,7 +98,7 @@ Machine Learning Engineer with 4+ years building production agentic AI systems, 
 \begin{tabularx}{\textwidth}{r X}
   \small\textbf{AI / LLM} & \small \textbf{RAG}, Agentic AI, \textbf{LangGraph}, \textbf{DSPy}, LangChain, vLLM, Fine-tuning (LoRA, RLHF/DPO), Tool Use, HF Transformers \\
   \small\textbf{ML / DL} & \small \textbf{PyTorch}, TensorFlow, FSDP, DeepSpeed, SLURM Multi-GPU, Triton Kernels, \textbf{Deep Learning}, \textbf{Computer Vision}, NLP, \textbf{CUDA} \\
-  \small\textbf{Infra} & \small \textbf{Knowledge Graphs} (Apache AGE, FalkorDB), PostgreSQL, LanceDB, \textbf{FastAPI}, \textbf{Docker}, K8s, Terraform, \textbf{AWS}, Redis, Model Monitoring \\
+  \small\textbf{Infra} & \small \textbf{Knowledge Graphs} (Apache AGE, LightRAG), PostgreSQL/pgvector, \textbf{FastAPI}, \textbf{Docker}, K8s, Terraform, \textbf{AWS}, Redis, Model Monitoring \\
   \small\textbf{Languages} & \small \textbf{Python}, SQL, C++, JavaScript, Bash \\
 \end{tabularx}
 
@@ -113,7 +113,7 @@ Machine Learning Engineer with 4+ years building production agentic AI systems, 
     \resumeItemListStart
       \resumeItem{Architected and deployed production \textbf{deep learning} + agentic AI workflows for regulated document analysis, evidence retrieval, and corporate ownership reasoning using \textbf{LangGraph} orchestration, \textbf{DSPy} optimization, and multi-step reasoning across federal and corporate data sources.}
       \resumeItem{Engineered \textbf{knowledge graph} infrastructure (PostgreSQL + Apache AGE) with entity resolution across SAM.gov, SEC EDGAR, and GLEIF corporate registries, supporting multi-hop ownership-chain tracing with low-latency query response.}
-      \resumeItem{Built production \textbf{document intelligence pipeline} with GPU-accelerated embeddings (\textbf{Ollama} + NIM fallback), \textbf{LanceDB} vector search, and \textbf{FalkorDB} knowledge graph --- reducing multi-source research synthesis from days of manual review to minutes across federal databases and regulatory documents.}
+      \resumeItem{Built production \textbf{document intelligence pipeline} with GPU-accelerated embeddings (\textbf{Ollama} + NIM fallback), LightRAG/PostgreSQL-backed retrieval, and source-grounded synthesis across federal databases and regulatory documents.}
       \resumeItem{Built \textbf{model evaluation} framework for LLM baselines, feature engineering, contamination checks, and multi-annotator validation in ownership and compliance-oriented reasoning workflows.}
       \resumeItem{Deployed production \textbf{RAG pipelines} on AWS with multi-path reasoning, hybrid vector/keyword search, and source-grounded retrieval; built GPU-accelerated CV pipelines with \textbf{PyTorch} and CUDA.}
       \resumeItem{Owned end-to-end \textbf{ML infrastructure} --- Docker multi-service orchestration, Terraform IaC, \textbf{CI/CD}, \textbf{model serving}, \textbf{monitoring}, and multi-backend embedding fallback for production ML services.}
@@ -151,14 +151,14 @@ Machine Learning Engineer with 4+ years building production agentic AI systems, 
     {Ownership Risk Evaluation Workbench}{}
     {Multi-source entity resolution | LLM baseline evaluation | Evidence tracing}{}
     \resumeItemListStart
-      \resumeItem{Built an evaluation workbench for corporate ownership reasoning, evidence tracing, and baseline comparison under regulated review workflows. Public release language is intentionally scoped until validation artifacts are ready.}
+      \resumeItem{Built an evaluation workbench for corporate ownership reasoning, evidence tracing, and baseline comparison under regulated review workflows. Public descriptions are scoped to non-sensitive architecture and released validation artifacts.}
     \resumeItemListEnd
 
   \resumeSubheadingSingle
     {InfiniteContext-1B: Million-Token LLM Architecture}{\href{https://github.com/lucky-verma/InfiniteContext-1B}{GitHub}}
     {DeepSeek-V3 MLA | Distributed FSDP | Consumer GPU inference}{}
     \resumeItemListStart
-      \resumeItem{Designing MLA-based LLM architecture targeting \textbf{93\%+} KV cache reduction for million-token inference on consumer GPUs; implementing custom Triton kernels and FSDP distributed training pipeline on SLURM clusters. \textit{[In progress]}}
+      \resumeItem{Building an experimental MLA-based long-context LLM architecture workbench with custom Triton kernels, FSDP distributed training plumbing, and reproducible evaluation scripts for consumer-GPU inference studies.}
     \resumeItemListEnd
 
 \resumeSubHeadingListEnd

@@ -702,6 +702,32 @@ img {
 }
 
 @media (max-width: 640px) {
+    .site-header {
+        gap: 12px;
+        padding: 12px 14px;
+    }
+
+    .brand {
+        min-width: 176px;
+        gap: 8px;
+    }
+
+    .brand-mark,
+    .theme-toggle {
+        width: 34px;
+        height: 34px;
+    }
+
+    .brand small {
+        font-size: 0.68rem;
+    }
+
+    .site-nav {
+        justify-content: space-between;
+        gap: 10px;
+        font-size: 0.8rem;
+    }
+
     .hero-section,
     .section,
     .page-hero,

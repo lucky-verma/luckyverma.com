@@ -39,7 +39,7 @@
 - Code: https://github.com/lucky-verma/dyt-composition-study
 
 ## Public Engineering Artifacts
-- GitHub profile: 92 public repositories and 122 total stars as of 2026-06-03.
+- GitHub profile: 97 public repositories and 126 total stars as of 2026-06-26.
 - Document Classification using LayoutLM: 35 GitHub stars.
 - US Driver License Data Extraction: 26 GitHub stars.
 - Sleep-Awake Classification using PPG: 16 GitHub stars.
@@ -47,4 +47,4 @@
 - InfiniteContext-1B: active long-context LLM architecture workbench.
 
 ## Disclosure Note
-Some production systems, reviewer records, and research artifacts contain confidential customer data, private venue material, or unreleased benchmark details. The public website intentionally limits those descriptions to verifiable and discloseable facts.
+Some production systems, reviewer records, and research artifacts contain confidential customer data, private venue material, or unreleased benchmark details. The public website intentionally limits those descriptions to verifiable and disclosable facts.
