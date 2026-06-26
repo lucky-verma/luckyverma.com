@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Publications | Lucky Verma</title>
-    <meta name="description" content="Public manuscripts and preprints by Lucky Verma on masked diffusion language models, LoRA monitor calibration, transformer normalization, and activation bounding.">
+    <meta name="description" content="Public manuscripts and preprints by Lucky Verma on masked diffusion language models, LoRA monitor calibration, grokking diagnostics, transformer normalization, and activation bounding.">
     <meta name="author" content="Lucky Verma">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="https://luckyverma.com/publications/">
@@ -21,7 +21,7 @@
     <link rel="apple-touch-icon" href="/images/apple-touch-icon-180x180.png">
     <link rel="manifest" href="/images/manifest.json">
     <link rel="llms" href="/llms.txt" type="text/plain">
-    <link rel="stylesheet" href="/styles.css?v=e09bac4">
+    <link rel="stylesheet" href="/styles.css?v=20260626b">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -47,6 +47,18 @@
           {
             "@type": "ListItem",
             "position": 2,
+            "item": {
+              "@type": "ScholarlyArticle",
+              "name": "Weight Decay Regimes in Grokking Transformers: Cheap Online Diagnostics",
+              "author": {"@type": "Person", "name": "Lucky Verma"},
+              "datePublished": "2026",
+              "url": "https://arxiv.org/abs/2605.20441",
+              "identifier": "https://doi.org/10.48550/arXiv.2605.20441"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
             "item": {
               "@type": "ScholarlyArticle",
               "name": "When Does Removing LayerNorm Help? Activation Bounding as a Regime-Dependent Implicit Regularizer",
@@ -100,6 +112,27 @@
                 <details class="abstract">
                   <summary>Abs</summary>
                   <p>This paper audits a transferred top-1-frequency collapse warning for LoRA fine-tuning of masked diffusion language models. In the reported cohorts, the top-1 warning fires broadly while observed collapse is zero at the audited horizons, motivating family-local monitoring with max LoRA gradient norm instead.</p>
+                </details>
+              </div>
+            </div>
+          </li>
+
+          <li class="pub-item">
+            <div class="pub-row">
+              <div class="abbr"><span class="badge">arXiv</span></div>
+              <div>
+                <div class="pub-title">Weight Decay Regimes in Grokking Transformers: Cheap Online Diagnostics</div>
+                <div class="authors"><strong>Lucky Verma</strong></div>
+                <div class="venue"><em>arXiv preprint arXiv:2605.20441</em>, 2026</div>
+                <div class="links">
+                  <a class="btn" href="https://arxiv.org/abs/2605.20441">paper</a>
+                  <a class="btn" href="https://doi.org/10.48550/arXiv.2605.20441">doi</a>
+                  <a class="btn" href="https://github.com/lucky-verma/grokking-diagnostics">code</a>
+                  <a class="btn" href="https://huggingface.co/datasets/lucky-verma/grokking-diagnostics-runs">dataset</a>
+                </div>
+                <details class="abstract">
+                  <summary>Abs</summary>
+                  <p>This solo-author preprint studies cheap online diagnostics for grokking phase regimes in transformers. The public artifact includes a Python package, aggregate JSONs, provenance manifests, figure artifacts, Lean 4 checks, and a Hugging Face dataset.</p>
                 </details>
               </div>
             </div>

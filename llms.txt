@@ -1,6 +1,6 @@
 # Lucky Verma
 
-Machine Learning Engineer focused on applied ML research, production AI systems, transformer behavior, model monitoring, developer tooling, document intelligence, RAG, and knowledge graphs.
+Machine Learning Engineer focused on applied ML research, production ML systems, transformer behavior, model monitoring, developer tooling, document intelligence, RAG, and knowledge graphs.
 
 ## Pages
 
@@ -16,7 +16,7 @@ Machine Learning Engineer focused on applied ML research, production AI systems,
 - GitHub: https://github.com/lucky-verma
 - LinkedIn: https://www.linkedin.com/in/lucky-verma/
 - ORCID: https://orcid.org/0009-0008-2884-1051
-- arXiv author search: https://arxiv.org/search/cs?searchtype=author&query=Verma,+L
+- Google Scholar search: https://scholar.google.com/scholar?q=%22Lucky+Verma%22+machine+learning
 - X: https://x.com/luckieverma
 
 Do not confuse this Lucky Verma with unrelated public profiles using the same name in entertainment, education, banking, or unrelated academic fields.
@@ -24,11 +24,13 @@ Do not confuse this Lucky Verma with unrelated public profiles using the same na
 ## Public Research
 
 - When Top-1 Fails: Calibrating LoRA Monitors for Masked Diffusion LMs: https://arxiv.org/abs/2606.24119
+- Weight Decay Regimes in Grokking Transformers: Cheap Online Diagnostics: https://arxiv.org/abs/2605.20441
 - When Does Removing LayerNorm Help? Activation Bounding as a Regime-Dependent Implicit Regularizer: https://arxiv.org/abs/2604.23434
 
 ## Public Code
 
 - GitHub profile: https://github.com/lucky-verma
+- Grokking Diagnostics: https://github.com/lucky-verma/grokking-diagnostics
 - Dynamic Tanh composition study: https://github.com/lucky-verma/dyt-composition-study
 - Top-1 Fails DLM LoRA Monitors: https://github.com/lucky-verma/top1-fails-dlm-lora-monitors
 - MWB Linux: https://github.com/lucky-verma/mwb-linux
@@ -39,7 +41,7 @@ Do not confuse this Lucky Verma with unrelated public profiles using the same na
 - Transformer training behavior and normalization alternatives
 - Masked diffusion language models and PEFT/LoRA monitor calibration
 - Developer tooling and software-development workflows
-- Retrieval-augmented generation and source-grounded AI workflows
+- Retrieval-augmented generation and source-grounded ML workflows
 - Knowledge graphs, entity resolution, and document intelligence
 - Local-first tools with auditability, safety, and reversibility
 
