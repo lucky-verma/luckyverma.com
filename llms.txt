@@ -1,50 +1,28 @@
 # Lucky Verma
 
-> Machine Learning Engineer building production AI systems, agentic workflows, knowledge graphs, RAG pipelines, and document intelligence infrastructure.
+Machine Learning Engineer focused on applied ML research, production AI systems, transformer behavior, model monitoring, document intelligence, RAG, and knowledge graphs.
 
-## Canonical Website
+## Pages
+
 - Home: https://luckyverma.com/
-- Work: https://luckyverma.com/work
-- Research: https://luckyverma.com/research
-- Service: https://luckyverma.com/service
-- Writing: https://luckyverma.com/writing
-- CV: https://luckyverma.com/cv
+- Publications: https://luckyverma.com/publications/
+- Projects: https://luckyverma.com/projects/
+- CV: https://luckyverma.com/cv/
 - Resume PDF: https://luckyverma.com/Lucky_Verma_Resume.pdf
 
-## Public Identity
-- Name: Lucky Verma
-- Role: Machine Learning Engineer
-- Location: Nashville Metro, TN
-- Email: luckie.verma30@gmail.com
-- GitHub: https://github.com/lucky-verma
-- LinkedIn: https://linkedin.com/in/lucky-verma
-- ORCID: https://orcid.org/0009-0008-2884-1051
-- Medium: https://lucky-verma.medium.com
-
-## Areas
-- Production AI systems
-- Agentic AI workflows
-- Retrieval-augmented generation
-- Knowledge graphs
-- Entity resolution
-- Document intelligence
-- Model evaluation
-- Machine learning infrastructure
-
 ## Public Research
-- "When Does Removing LayerNorm Help? Activation Bounding as a Regime-Dependent Implicit Regularizer"
-- Author: Lucky Verma
-- arXiv: https://arxiv.org/abs/2604.23434
-- DOI: https://doi.org/10.48550/arXiv.2604.23434
-- Code: https://github.com/lucky-verma/dyt-composition-study
 
-## Public Engineering Artifacts
-- GitHub profile: 97 public repositories and 126 total stars as of 2026-06-26.
-- Document Classification using LayoutLM: 35 GitHub stars.
-- US Driver License Data Extraction: 26 GitHub stars.
-- Sleep-Awake Classification using PPG: 16 GitHub stars.
-- ABP Estimation using PPG: 10 GitHub stars.
-- InfiniteContext-1B: active long-context LLM architecture workbench.
+- When Top-1 Fails: Calibrating LoRA Monitors for Masked Diffusion LMs: https://arxiv.org/abs/2606.24119
+- When Does Removing LayerNorm Help? Activation Bounding as a Regime-Dependent Implicit Regularizer: https://arxiv.org/abs/2604.23434
 
-## Disclosure Note
-Some production systems, reviewer records, and research artifacts contain confidential customer data, private venue material, or unreleased benchmark details. The public website intentionally limits those descriptions to verifiable and disclosable facts.
+## Public Code
+
+- GitHub profile: https://github.com/lucky-verma
+- Dynamic Tanh composition study: https://github.com/lucky-verma/dyt-composition-study
+- Top-1 Fails DLM LoRA Monitors: https://github.com/lucky-verma/top1-fails-dlm-lora-monitors
+- MWB Linux: https://github.com/lucky-verma/mwb-linux
+- Mail Reclaim: https://github.com/lucky-verma/mail-reclaim
+
+## Notes
+
+This site intentionally describes public artifacts and broadly describable work. It avoids private employer details and unsupported recognition or reviewing claims.

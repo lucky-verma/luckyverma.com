@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>projects | Lucky Verma</title>
+    <meta name="description" content="Selected public software and research artifacts by Lucky Verma.">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <nav class="navbar" aria-label="Primary navigation">
+      <div class="nav-inner">
+        <a class="brand" href="/">Lucky Verma</a>
+        <ul class="nav-links">
+          <li><a href="/">about</a></li>
+          <li><a href="/publications/">publications</a></li>
+          <li><a href="/projects/" aria-current="page">projects</a></li>
+          <li><a href="/cv/">cv</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="container">
+      <header class="page-header">
+        <h1>projects</h1>
+      </header>
+
+      <article>
+        <p>Selected public repositories and artifact bundles. This page favors work that is released, inspectable, and relevant to an applied ML research profile.</p>
+
+        <ul class="project-list">
+          <li class="project-item">
+            <div class="project-title">Dynamic Tanh composition study</div>
+            <div class="project-meta">Transformer normalization study | code, configs, manifests, validation scripts</div>
+            <p>Public artifact repository for the LayerNorm/DyT empirical study, including controlled GPT-2-family scaling experiments, Llama-style and ViT checks, aggregate result files, and artifact-release hygiene.</p>
+            <div class="links project-links">
+              <a class="btn" href="https://github.com/lucky-verma/dyt-composition-study">github</a>
+              <a class="btn" href="https://arxiv.org/abs/2604.23434">paper</a>
+              <a class="btn" href="https://huggingface.co/datasets/lucky-verma/dyt-composition-artifacts">dataset</a>
+            </div>
+          </li>
+
+          <li class="project-item">
+            <div class="project-title">Top-1 Fails DLM LoRA Monitors</div>
+            <div class="project-meta">Masked diffusion LMs | LoRA monitor calibration | aggregate artifacts</div>
+            <p>Reference logging/checking scripts and sanitized aggregate result artifacts for calibrating collapse-warning monitors in masked diffusion language model LoRA fine-tuning.</p>
+            <div class="links project-links">
+              <a class="btn" href="https://github.com/lucky-verma/top1-fails-dlm-lora-monitors">github</a>
+              <a class="btn" href="https://arxiv.org/abs/2606.24119">paper</a>
+            </div>
+          </li>
+
+          <li class="project-item">
+            <div class="project-title">Document AI and OCR repositories</div>
+            <div class="project-meta">LayoutLM | driver-license OCR | invoice extraction | information extraction</div>
+            <p>Public document-understanding work includes LayoutLM document classification, U.S. driver-license data extraction, invoice field extraction, and SaastIE-style information extraction repositories.</p>
+            <div class="links project-links">
+              <a class="btn" href="https://github.com/lucky-verma/Document-Classification-using-LayoutLM">layoutlm</a>
+              <a class="btn" href="https://github.com/lucky-verma/US-Driver-License-data-extraction">license ocr</a>
+              <a class="btn" href="https://github.com/lucky-verma/Invoice-Data-Extraction">invoice</a>
+              <a class="btn" href="https://github.com/lucky-verma/SaastIE">saastie</a>
+            </div>
+          </li>
+
+          <li class="project-item">
+            <div class="project-title">MWB Linux</div>
+            <div class="project-meta">Go | Linux desktop tooling | Microsoft PowerToys Mouse Without Borders protocol</div>
+            <p>Native Linux client for connecting to Microsoft PowerToys Mouse Without Borders on Windows, supporting keyboard, mouse, and clipboard workflows across Linux and Windows machines.</p>
+            <div class="links project-links">
+              <a class="btn" href="https://github.com/lucky-verma/mwb-linux">github</a>
+            </div>
+          </li>
+
+          <li class="project-item">
+            <div class="project-title">Mail Reclaim</div>
+            <div class="project-meta">Local-first Gmail cleanup | safe recommendations | reversible actions</div>
+            <p>Local Gmail storage cleanup tool with read-only scanning, SQLite caching, conservative recommendation rules, and a separate guarded action mode for label, archive, and trash workflows.</p>
+            <div class="links project-links">
+              <a class="btn" href="https://github.com/lucky-verma/mail-reclaim">github</a>
+            </div>
+          </li>
+
+          <li class="project-item">
+            <div class="project-title">Biomedical signal ML repositories</div>
+            <div class="project-meta">PPG | EEG | sleep and physiological signal classification</div>
+            <p>Earlier public ML work includes sleep-awake classification using PPG, arterial blood pressure estimation using PPG, and CAP analysis using EEG.</p>
+            <div class="links project-links">
+              <a class="btn" href="https://github.com/lucky-verma/Sleep-Awake-Classifiation-using-PPG">sleep ppg</a>
+              <a class="btn" href="https://github.com/lucky-verma/ABP-estimation-using-PPG">abp ppg</a>
+              <a class="btn" href="https://github.com/lucky-verma/CAP-using-EEG">eeg</a>
+            </div>
+          </li>
+        </ul>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">&copy; 2026 Lucky Verma.</div>
+    </footer>
+  </body>
+</html>

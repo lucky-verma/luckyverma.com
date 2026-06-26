@@ -88,7 +88,7 @@
 \section{Summary}
 \vspace{1pt}
 \small{
-Machine Learning Engineer with 4+ years building production agentic AI systems, knowledge graphs, and deep learning pipelines for large-scale data infrastructure. Expert in multi-agent orchestration (LangGraph, DSPy), RAG pipelines, entity resolution, model evaluation, and real-time inference serving on GPU clusters.
+Machine Learning Engineer with 4+ years building production agentic AI systems, knowledge graphs, and deep learning pipelines for large-scale data infrastructure. Public research record includes two arXiv preprints with code/artifacts. Expert in multi-agent orchestration (LangGraph, DSPy), RAG pipelines, entity resolution, model evaluation, and real-time inference serving on GPU clusters.
 }
 
 %-----------TECHNICAL SKILLS-----------
@@ -142,23 +142,30 @@ Machine Learning Engineer with 4+ years building production agentic AI systems, 
 
 \resumeSubHeadingListEnd
 
-%-----------KEY PROJECTS-----------
-\section{Key Projects \& Open Source}
+%-----------RESEARCH AND OPEN SOURCE-----------
+\section{Research \& Open Source}
 
 \resumeSubHeadingListStart
 
   \resumeSubheadingSingle
-    {Ownership Risk Evaluation Workbench}{}
-    {Multi-source entity resolution | LLM baseline evaluation | Evidence tracing}{}
+    {When Does Removing LayerNorm Help?}{\href{https://arxiv.org/abs/2604.23434}{arXiv} $|$ \href{https://github.com/lucky-verma/dyt-composition-study}{Code}}
+    {Activation bounding | Transformer normalization | Reproducible artifacts}{}
     \resumeItemListStart
-      \resumeItem{Built an evaluation workbench for corporate ownership reasoning, evidence tracing, and baseline comparison under regulated review workflows. Public descriptions are scoped to non-sensitive architecture and released validation artifacts.}
+      \resumeItem{Solo-author public preprint studying regime-dependent behavior when replacing LayerNorm with bounded activations; released configs, result manifests, validation scripts, and artifact notes.}
     \resumeItemListEnd
 
   \resumeSubheadingSingle
-    {InfiniteContext-1B: Million-Token LLM Architecture}{\href{https://github.com/lucky-verma/InfiniteContext-1B}{GitHub}}
-    {DeepSeek-V3 MLA | Distributed FSDP | Consumer GPU inference}{}
+    {When Top-1 Fails: Calibrating LoRA Monitors for Masked Diffusion LMs}{\href{https://arxiv.org/abs/2606.24119}{arXiv} $|$ \href{https://github.com/lucky-verma/top1-fails-dlm-lora-monitors}{Code}}
+    {Masked diffusion LMs | LoRA monitor calibration | Released aggregate artifacts}{}
     \resumeItemListStart
-      \resumeItem{Building an experimental MLA-based long-context LLM architecture workbench with custom Triton kernels, FSDP distributed training plumbing, and reproducible evaluation scripts for consumer-GPU inference studies.}
+      \resumeItem{Co-authored public preprint with reference logging/checking scripts and sanitized aggregate result artifacts backing paper tables and figures.}
+    \resumeItemListEnd
+
+  \resumeSubheadingSingle
+    {Public ML and developer-tool repositories}{\href{https://github.com/lucky-verma}{GitHub}}
+    {97 public repos | 50 non-fork public repos | 126 total stars as of Jun 2026}{}
+    \resumeItemListStart
+      \resumeItem{Selected public work spans LayoutLM document classification (35 stars), driver-license OCR (26), PPG/EEG biomedical signal projects, MWB Linux, Mail Reclaim, and InfiniteContext-1B.}
     \resumeItemListEnd
 
 \resumeSubHeadingListEnd
