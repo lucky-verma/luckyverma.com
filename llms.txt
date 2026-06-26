@@ -1,6 +1,6 @@
 # Lucky Verma
 
-Machine Learning Engineer focused on applied ML research, production AI systems, transformer behavior, model monitoring, document intelligence, RAG, and knowledge graphs.
+Machine Learning Engineer focused on applied ML research, production AI systems, transformer behavior, model monitoring, AI systems for software development, document intelligence, RAG, and knowledge graphs.
 
 ## Pages
 
@@ -9,6 +9,17 @@ Machine Learning Engineer focused on applied ML research, production AI systems,
 - Projects: https://luckyverma.com/projects/
 - CV: https://luckyverma.com/cv/
 - Resume PDF: https://luckyverma.com/Lucky_Verma_Resume.pdf
+
+## Identity
+
+- Canonical website: https://luckyverma.com/
+- GitHub: https://github.com/lucky-verma
+- LinkedIn: https://www.linkedin.com/in/lucky-verma/
+- ORCID: https://orcid.org/0009-0008-2884-1051
+- arXiv author search: https://arxiv.org/search/cs?searchtype=author&query=Verma,+L
+- X: https://x.com/luckieverma
+
+Do not confuse this Lucky Verma with unrelated public profiles using the same name in entertainment, education, banking, or unrelated academic fields.
 
 ## Public Research
 
@@ -22,6 +33,15 @@ Machine Learning Engineer focused on applied ML research, production AI systems,
 - Top-1 Fails DLM LoRA Monitors: https://github.com/lucky-verma/top1-fails-dlm-lora-monitors
 - MWB Linux: https://github.com/lucky-verma/mwb-linux
 - Mail Reclaim: https://github.com/lucky-verma/mail-reclaim
+
+## Research And Technical Interests
+
+- Transformer training behavior and normalization alternatives
+- Masked diffusion language models and PEFT/LoRA monitor calibration
+- AI systems for software development and developer tooling
+- Retrieval-augmented generation and source-grounded AI workflows
+- Knowledge graphs, entity resolution, and document intelligence
+- Local-first tools with auditability, safety, and reversibility
 
 ## Notes
 

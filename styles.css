@@ -155,11 +155,11 @@ li {
 }
 
 .profile-photo {
-  float: left;
-  width: 178px;
-  height: 178px;
+  float: right;
+  width: 166px;
+  height: 166px;
   object-fit: cover;
-  margin: 4px 24px 14px 0;
+  margin: 0 0 16px 28px;
   border-radius: 2px;
 }
 
@@ -173,6 +173,34 @@ li {
 
 .contact-line {
   margin-top: 24px;
+}
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0 28px;
+}
+
+.profile-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+  padding: 3px 10px;
+  border: 1px solid #d0d0d0;
+  border-radius: 3px;
+  color: #222222;
+  font-size: 13px;
+  line-height: 1;
+  text-transform: lowercase;
+}
+
+.profile-links a:hover,
+.profile-links a:focus {
+  border-color: #111111;
+  background: #111111;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .bibliography {
