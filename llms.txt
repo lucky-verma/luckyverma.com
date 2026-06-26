@@ -1,6 +1,6 @@
 # Lucky Verma
 
-Machine Learning Engineer focused on applied ML research, production AI systems, transformer behavior, model monitoring, AI systems for software development, document intelligence, RAG, and knowledge graphs.
+Machine Learning Engineer focused on applied ML research, production AI systems, transformer behavior, model monitoring, developer tooling, document intelligence, RAG, and knowledge graphs.
 
 ## Pages
 
@@ -38,7 +38,7 @@ Do not confuse this Lucky Verma with unrelated public profiles using the same na
 
 - Transformer training behavior and normalization alternatives
 - Masked diffusion language models and PEFT/LoRA monitor calibration
-- AI systems for software development and developer tooling
+- Developer tooling and software-development workflows
 - Retrieval-augmented generation and source-grounded AI workflows
 - Knowledge graphs, entity resolution, and document intelligence
 - Local-first tools with auditability, safety, and reversibility
