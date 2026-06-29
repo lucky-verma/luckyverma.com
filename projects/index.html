@@ -22,6 +22,73 @@
     <link rel="manifest" href="/images/manifest.json">
     <link rel="llms" href="/llms.txt" type="text/plain">
     <link rel="stylesheet" href="/styles.css?v=20260626b">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Lucky Verma software projects",
+        "url": "https://luckyverma.com/projects/",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "SoftwareSourceCode",
+              "name": "MWB Linux",
+              "description": "Native Linux client for the Microsoft PowerToys Mouse Without Borders protocol (keyboard, mouse, and clipboard sharing with Windows).",
+              "programmingLanguage": "Go",
+              "codeRepository": "https://github.com/lucky-verma/mwb-linux",
+              "author": {"@type": "Person", "name": "Lucky Verma"}
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "SoftwareSourceCode",
+              "name": "Document Classification using LayoutLM",
+              "programmingLanguage": "Python",
+              "codeRepository": "https://github.com/lucky-verma/Document-Classification-using-LayoutLM",
+              "author": {"@type": "Person", "name": "Lucky Verma"}
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "SoftwareSourceCode",
+              "name": "US Driver License Data Extraction",
+              "programmingLanguage": "Python",
+              "codeRepository": "https://github.com/lucky-verma/US-Driver-License-data-extraction",
+              "author": {"@type": "Person", "name": "Lucky Verma"}
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "SoftwareSourceCode",
+              "name": "Invoice Data Extraction",
+              "programmingLanguage": "Python",
+              "codeRepository": "https://github.com/lucky-verma/Invoice-Data-Extraction",
+              "author": {"@type": "Person", "name": "Lucky Verma"}
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@type": "SoftwareSourceCode",
+              "name": "Mail Reclaim",
+              "description": "Local-first Gmail storage cleanup with read-only scanning, SQLite caching, and reversible label/archive/trash actions.",
+              "programmingLanguage": "Python",
+              "codeRepository": "https://github.com/lucky-verma/mail-reclaim",
+              "author": {"@type": "Person", "name": "Lucky Verma"}
+            }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <nav class="navbar" aria-label="Primary navigation">
@@ -42,38 +109,15 @@
       </header>
 
       <article>
-        <p>Selected public repositories and artifact bundles. This page favors work that is released, inspectable, and relevant to an applied ML research profile.</p>
+        <p>Selected public software and developer tooling I have built and released. For research papers and their artifact bundles, see <a href="/publications/">publications</a>.</p>
 
         <ul class="project-list">
           <li class="project-item">
-            <div class="project-title">Grokking Diagnostics</div>
-            <div class="project-meta">Transformer training behavior | online diagnostics | aggregate artifacts</div>
-            <p>Public artifact repository for studying cheap online attention-head diagnostics during grokking, with a Python package, aggregate JSONs, provenance manifests, figure artifacts, Lean 4 checks, and a companion Hugging Face dataset.</p>
+            <div class="project-title">MWB Linux</div>
+            <div class="project-meta">Go | Linux desktop tooling | Microsoft PowerToys Mouse Without Borders protocol</div>
+            <p>Native Linux client for connecting to Microsoft PowerToys Mouse Without Borders on Windows, supporting keyboard, mouse, and clipboard workflows across Linux and Windows machines.</p>
             <div class="links project-links">
-              <a class="btn" href="https://github.com/lucky-verma/grokking-diagnostics">github</a>
-              <a class="btn" href="https://arxiv.org/abs/2605.20441">paper</a>
-              <a class="btn" href="https://huggingface.co/datasets/lucky-verma/grokking-diagnostics-runs">dataset</a>
-            </div>
-          </li>
-
-          <li class="project-item">
-            <div class="project-title">Dynamic Tanh composition study</div>
-            <div class="project-meta">Transformer normalization study | code, configs, manifests, validation scripts</div>
-            <p>Public artifact repository for the LayerNorm/DyT empirical study, including controlled GPT-2-family scaling experiments, Llama-style and ViT checks, aggregate result files, and artifact-release hygiene.</p>
-            <div class="links project-links">
-              <a class="btn" href="https://github.com/lucky-verma/dyt-composition-study">github</a>
-              <a class="btn" href="https://arxiv.org/abs/2604.23434">paper</a>
-              <a class="btn" href="https://huggingface.co/datasets/lucky-verma/dyt-composition-artifacts">dataset</a>
-            </div>
-          </li>
-
-          <li class="project-item">
-            <div class="project-title">Top-1 Fails DLM LoRA Monitors</div>
-            <div class="project-meta">Masked diffusion LMs | LoRA monitor calibration | aggregate artifacts</div>
-            <p>Reference logging/checking scripts and sanitized aggregate result artifacts for calibrating collapse-warning monitors in masked diffusion language model LoRA fine-tuning.</p>
-            <div class="links project-links">
-              <a class="btn" href="https://github.com/lucky-verma/top1-fails-dlm-lora-monitors">github</a>
-              <a class="btn" href="https://arxiv.org/abs/2606.24119">paper</a>
+              <a class="btn" href="https://github.com/lucky-verma/mwb-linux">github</a>
             </div>
           </li>
 
@@ -86,15 +130,6 @@
               <a class="btn" href="https://github.com/lucky-verma/US-Driver-License-data-extraction">license ocr</a>
               <a class="btn" href="https://github.com/lucky-verma/Invoice-Data-Extraction">invoice</a>
               <a class="btn" href="https://github.com/lucky-verma/SaastIE">saastie</a>
-            </div>
-          </li>
-
-          <li class="project-item">
-            <div class="project-title">MWB Linux</div>
-            <div class="project-meta">Go | Linux desktop tooling | Microsoft PowerToys Mouse Without Borders protocol</div>
-            <p>Native Linux client for connecting to Microsoft PowerToys Mouse Without Borders on Windows, supporting keyboard, mouse, and clipboard workflows across Linux and Windows machines.</p>
-            <div class="links project-links">
-              <a class="btn" href="https://github.com/lucky-verma/mwb-linux">github</a>
             </div>
           </li>
 
